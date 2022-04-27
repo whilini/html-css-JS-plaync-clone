@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/card.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/plaync-global.ico"
+      type="image/x-icon"
+    />
+
+    <!-- FullPage CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
+
+    <!-- SWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+
+    <!-- FullPage JS -->
+    <script src="./js/fullpage.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script
+      defer
+      src="./js/scrolloverflow.min.js"
+      onload="iScrollOnload()"
+    ></script>
+    <script defer src="./js/cards.js"></script>
+    <script defer src="./js/swiper.js"></script>
+
+    <title>PLAYNC - NCSOFT</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="inner">
+        <div class="wrapper">
+          <div class="wrapper-left">
+            <button href="#" class="menu-open">
+              <span>
+                <i></i>
+                <i></i>
+                <i></i>
+              </span>
+            </button>
+            <a href="/" class="logo">
+              <img src="./images/bi-plaync-type2.png" alt="main logo" />
+            </a>
+          </div>
+          <div class="wrapper-right">
+            <div class="login">
+              <a href="javascript:void(0)">로그인</a>
+              <a href="javascript:void(0)">회원가입</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="fullpage">
+      <!-- PAGE 1 -->
+      <div data-anchor="Page 1" class="section">
+        <div class="page1">
+          <div class="toppage">
+            <div class="visual1">
+              <div class="main-container maxwidth-container">
+                <h2>PLAY, 그 이상의 경험</h2>
+                <div class="top__subtitle">PLAYNC</div>
+                <ul class="top__tab">
+                  <li>All Games</li>
+                  <li>Windows</li>
+                  <li>iOS</li>
+                  <li>Android</li>
+                </ul>
+
+                <div class="top__contents">
+                  <div class="top__btn-view">
+                    <button class="showall"></button>
+                  </div>
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper"></div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- NEXT BUTTON -->
+        <div id="pageable-btns">
+          <button
+            id="pageable-prev-btn"
+            onclick="$.fn.fullpage.moveSectionUp();"
+          >
+            prev
+          </button>
+          <button
+            id="pageable-next-btn"
+            onclick="$.fn.fullpage.moveSectionDown();"
+          ></button>
+        </div>
+      </div>
+
+      <!-- PAGE 2 -->
+      <div data-anchor="Page 2" class="section">
+        <div class="page2">
+          <div class="report">
+            <div class="report__contents">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="circle"></div>
+                    <div class="report__wrap">
+                      <div class="report__logo">
+                        <img
+                          src="./images/report_logo_purple.png"
+                          alt="purple logo"
+                        />
+                      </div>
+                      <h3 class="report__subject">
+                        세상 모든 플레이를<br />
+                        색다르게
+                      </h3>
+                      <div class="report__main-img">
+                        <img
+                          src="./images/report_thumb_purple_kr_pc.png"
+                          alt="purple"
+                        />
+                      </div>
+                      <p class="report__desc">
+                        다양한 게임의 쾌적한 실행과,
+                        <br />
+                        편리한 커뮤니티 서비스를 통해
+                        <br />
+                        차원이 다른 플레이를 경험해보세요!
+                      </p>
+                      <div class="report__btn">
+                        <a href="javascript:void(0)">PURPLE 바로가기</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="circle"></div>
+                    <div class="report__wrap">
+                      <div class="report__logo">
+                        <img
+                          src="./images/report_logo_launcher_dark.png"
+                          alt="launcher_dark"
+                        />
+                      </div>
+                      <h3 class="report__subject">
+                        설치부터 업데이트까지<br />
+                        한 번에
+                      </h3>
+                      <div class="report__main-img">
+                        <img
+                          src="./images/report_thumb_launcher_pc.png"
+                          alt=""
+                        />
+                      </div>
+                      <p class="report__desc">
+                        PLAYNC의 모든 PC 게임을 최적화된
+                        <br />
+                        환경에서 편리하게 즐길 수 있습니다.
+                      </p>
+                      <div class="report__btn">
+                        <a href="javascript:void(0)">NC Launcher2 다운로드</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- NEXT BUTTON -->
+        <div id="pageable-btns">
+          <button
+            id="pageable-prev-btn"
+            onclick="$.fn.fullpage.moveSectionUp();"
+          >
+            prev
+          </button>
+          <button
+            id="pageable-next-btn"
+            onclick="$.fn.fullpage.moveSectionDown();"
+          ></button>
+        </div>
+      </div>
+
+      <!-- PAGE 3 -->
+      <div data-anchor="Page 3" class="section">
+        <div class="page3">
+          <div class="service">
+            <div class="main-container maxwidth-container">
+              <h2 class="service__title">VARIETY PLAYNC</h2>
+              <div class="service__subtitle">
+                게임 외에도 다양한 플레이엔씨 서비스를 만나보세요.
+              </div>
+              <div class="service__contents">
+                <div class="swiper-container">
+                  <div id="service-card-list" class="swiper-wrapper"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- NEXT BUTTON -->
+        <div id="pageable-btns">
+          <button
+            id="pageable-prev-btn"
+            onclick="$.fn.fullpage.moveSectionUp();"
+          >
+            prev
+          </button>
+          <button
+            id="pageable-next-btn"
+            onclick="$.fn.fullpage.moveSectionDown();"
+          ></button>
+        </div>
+      </div>
+
+      <!-- PAGE 4 -->
+      <div data-anchor="Page 4" class="section">
+        <div class="page4">
+          <div id="iscrollable" class="game-scrollable">
+            <div class="game-scroller">
+              <section class="event">
+                <div class="maxwidth-container">
+                  <h2 class="event__title">JOYFUL PLAYNC</h2>
+                  <div class="event__subtitle">
+                    즐거움이 가득한 이벤트와 각종 혜택을 확인해보세요.
+                  </div>
+                  <div class="event__contents">
+                    <div class="swiper-container">
+                      <div id="event-card-list" class="swiper-wrapper"></div>
+                    </div>
+                    <div class="swiper__btn-wrap">
+                      <div class="swiper-pagination">
+                        <span>opacity:0</span>
+                      </div>
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-button-next"></div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="other">
+                <div class="maxwidth-container">
+                  <div class="other__contents">
+                    <div class="other__items">
+                      <a href="javascript:void(0)">게임시간 선택제</a>
+                    </div>
+                    <div class="other__items">
+                      <a href="javascript:void(0)">PC방 홈페이지</a>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="customer">
+                <div class="maxwidth-container">
+                  <div class="customer__contents">
+                    <div class="customer__list">
+                      <div class="customer__items">
+                        <a href="javascript:void(0)">
+                          <img
+                            src="./images/20220216153046-bAhkiPx8C8oXWIWgyvn50-v4.jpg"
+                            alt=""
+                          />
+                          공지사항
+                        </a>
+                      </div>
+                      <div class="customer__items">
+                        <a href="javascript:void(0)">
+                          <img
+                            src="./images/20220216153046-1453DBsOsn2I6uA1vMim0-v4.jpg"
+                            alt=""
+                          />
+                          마이페이지
+                        </a>
+                      </div>
+                      <div class="customer__items">
+                        <a href="javascript:void(0)">
+                          <img
+                            src="./images/20220216153046-NrtfOqKMHEG1X2wBQPjv0-v4.jpg"
+                            alt=""
+                          />
+                          고객지원
+                        </a>
+                      </div>
+                      <div class="customer__items">
+                        <a href="javascript:void(0)">
+                          <img
+                            src="./images/20220216153046-ejBvoo8hSW4PIrDat3fB0-v4.jpg"
+                            alt=""
+                          />
+                          문의내역
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <footer class="footer">
+                <div class="footer-plaync">
+                  <div class="footer-change-wrap">
+                    <div class="footer-change-inner country">
+                      <button class="btn-footer-change">
+                        <span class="inner-txt">대한민국</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                        >
+                          <g fill="none" fill-opacity=".38" fill-rule="evenodd">
+                            <g fill="#FFF">
+                              <path
+                                d="M12 9l-4 4-4-4h8zM8 3l4 4H4l4-4z"
+                                transform="translate(-373.000000, -970.000000) translate(0.000000, 175.000000) translate(100.000000, 535.000000) translate(0.000000, 246.000000) translate(273.000000, 14.000000)"
+                              ></path>
+                            </g>
+                          </g>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="footer-change-inner language">
+                      <button class="btn-footer-change">
+                        <span class="inner-txt">한국어</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                        >
+                          <g fill="none" fill-opacity=".38" fill-rule="evenodd">
+                            <g fill="#FFF">
+                              <path
+                                d="M12 9l-4 4-4-4h8zM8 3l4 4H4l4-4z"
+                                transform="translate(-373.000000, -970.000000) translate(0.000000, 175.000000) translate(100.000000, 535.000000) translate(0.000000, 246.000000) translate(273.000000, 14.000000)"
+                              ></path>
+                            </g>
+                          </g>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="footer-links">
+                    <ul class="footer-links-list">
+                      <li class="footer-links-items">
+                        <a href="javascript:void(0)" target="_blank"
+                          >회사소개</a
+                        >
+                      </li>
+                      <li class="footer-links-items">
+                        <a href="javascript:void(0)" target="_self">이용약관</a>
+                      </li>
+                      <li class="footer-links-items">
+                        <a href="javascript:void(0)" target="_self">
+                          <strong>개인정보처리방침</strong>
+                        </a>
+                      </li>
+                      <li class="footer-links-items">
+                        <a href="javascript:void(0)" target="_self">
+                          <strong>청소년보호정책</strong>
+                        </a>
+                      </li>
+                      <li class="footer-links-items">
+                        <a href="javascript:void(0)" target="_self">운영정책</a>
+                      </li>
+                      <li class="footer-links-items">
+                        <a href="javascript:void(0)" target="_self">고객지원</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="footer-copyright">
+                    <div class="footer-info">
+                      상호 (주)엔씨소프트 대표 김택진 사업자 등록번호
+                      144-85-04244 통신판매업신고 제2013-경기성남-1268호
+                      <strong>사업자정보확인</strong>
+                      <br />
+                      주소 경기도 성남시 분당구 대왕판교로 644번길 12 모바일게임
+                      고객상담 1566-7004 팩스 02-2186-3499 이메일
+                      credit@ncsoft.com
+                      <br />
+                      Copyright ⓒ NCSOFT Corporation. All Rights Reserved.
+                    </div>
+                    <div class="footer-logo-wrap">
+                      <a
+                        class="footer-logo ncsoft"
+                        href="javascript:void(0)"
+                        target="_blank"
+                        >NCSOFT</a
+                      >
+                      <a
+                        class="footer-logo ncdinos"
+                        href="javascript:void(0)"
+                        target="_blank"
+                        >NC DINOS</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
