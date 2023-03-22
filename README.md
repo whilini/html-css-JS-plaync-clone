@@ -179,4 +179,5 @@ onBeforeStart: () => {
     - flex, grid에 대한 이해 및 적용
     - 가상 클래스 선택자, 가상 요소 선택자를 활용한 인터렉션
     - transition과 transform을 활용하여 역동적인 애니메이션 구현
+    - px 단위를 지양해야하는 이유에 대해 경험하고 반응형에 대한 개념과 
 - 외부 라이브러리(Swiper, fullpage.js) 사용 경험
